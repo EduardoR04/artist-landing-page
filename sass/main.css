@@ -1,0 +1,363 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #19202a;
+}
+
+header {
+  position: absolute;
+  z-index: 3;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 50px;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+#top-section {
+  position: relative;
+  height: 100vh;
+}
+
+#top-section .blurredbg {
+  background-image: linear-gradient(31deg, rgba(92, 74, 16, 0.89) 30%, rgba(126, 6, 6, 0.61) 88%), url("/img/the weend las vegas.jpeg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  -webkit-filter: blur(50px) saturate(130%);
+          filter: blur(50px) saturate(130%);
+  position: absolute;
+  z-index: 1;
+}
+
+#top-section .floating-img {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#top-section .tekashi-img {
+  width: 30%;
+}
+
+#top-section .tekashi-img img {
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#bio {
+  background: black;
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+}
+
+#bio .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#bio p {
+  width: 50%;
+  line-height: 1.5;
+  font-size: .9rem;
+  color: white;
+  padding: 0 50px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#bio .logo-centered {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+#bio .logo-centered .Owl-Logo {
+  width: 250px;
+  height: 250px;
+}
+
+#media {
+  background-color: black;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+#media .title {
+  background: black;
+  font-size: 2.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+#media .videos {
+  padding: 80px 50px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 50px;
+}
+
+#media .videos .video {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 300px;
+  -webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+#media .videos .video iframe {
+  height: 100%;
+}
+
+#music {
+  padding: 80px 0px;
+  position: relative;
+}
+
+#music .blurredbg {
+  background-image: linear-gradient(91deg, rgba(13, 79, 83, 0.89) 30%, rgba(202, 14, 14, 0.61) 88%), url("/img/the weend las vegas.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(50px) saturate(130%);
+          filter: blur(50px) saturate(130%);
+  position: absolute;
+  z-index: 1;
+}
+
+#music .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50px;
+  position: relative;
+  z-index: 3;
+}
+
+#music .info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#music .info .title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#music .info .sub-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  color: white;
+}
+
+#music .info .singles {
+  width: 400px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-bottom: 80px;
+  color: white;
+}
+
+#music .info .singles li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#music .info .logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#music .album-cover {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#music .album-cover img {
+  width: 50%;
+}
+
+#tour {
+  background: black;
+  position: relative;
+  z-index: 4;
+}
+
+#tour .top-img {
+  background-image: url("/img/Weeknd-group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  -webkit-filter: saturate(0%) contrast(120%);
+          filter: saturate(0%) contrast(120%);
+  height: 300px;
+}
+
+#tour .tourdates {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 80px;
+}
+
+#tour .tourdates .title {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0 0 80px;
+}
+
+#tour .tourdates .dates {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#tour .tourdates .dates li {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#tour .tourdates .dates li span {
+  padding: 0px 20px;
+}
+
+#tour .tourdates .dates li .city {
+  font-weight: 700;
+}
+
+#tour .tourdates .dates li .location {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#tour .tourdates .dates li .date {
+  font-weight: 500;
+  color: #998200;
+}
+
+footer {
+  background: #1b1b1b;
+  position: relative;
+  z-index: 4;
+  padding: 25px;
+  text-align: center;
+}
+
+footer img {
+  max-width: 45px;
+  color: white;
+  padding: 5px 0px;
+}
+/*# sourceMappingURL=main.css.map */
